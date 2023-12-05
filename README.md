@@ -1,2 +1,11 @@
-# umc-spring
-for umc spring missions
+# Ⓜ️ 7주차 미션 
+
+## 학습목표 ✅
+
+JPA를 통한 엔티티 설계, 매핑 & 프로젝트 파일 구조 이해
+
+- [ ] Springboot 디렉토리 컨벤션
+- [ ] 패키지 소개
+- [ ] converter의 사용 위치
+- [ ] Entity 매핑
+- [ ] 양방향 매핑
