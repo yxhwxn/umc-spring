@@ -23,4 +23,4 @@ JPA를 통한 엔티티 설계, 매핑 & 프로젝트 파일 구조 이해
 
 - 생성된 DB(MySQL localhost)
 
-  [logo]: https://github.com/yxhwxn/umc-spring/assets/87745916/bc24ff1c-1ee2-4332-ab4b-7d9ab987d251 "mySQL DB"
+  ![mySQL DB](https://github.com/yxhwxn/umc-spring/assets/87745916/bc24ff1c-1ee2-4332-ab4b-7d9ab987d251)
