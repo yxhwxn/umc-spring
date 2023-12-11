@@ -5,7 +5,6 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MethodArgumentNotValidException;
-import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.context.request.ServletWebRequest;
@@ -60,11 +59,11 @@ public class ExceptionAdvice extends ResponseEntityExceptionHandler {
         return handleExceptionInternalFalse(e, ErrorStatus._INTERNAL_SERVER_ERROR, HttpHeaders.EMPTY, ErrorStatus._INTERNAL_SERVER_ERROR.getHttpStatus(), request, e.getMessage());
     }
 
-    @ExceptionHandler(value = GeneralException.class)
-    public ResponseEntity onThrowException(GeneralException generalException, HttpServletRequest request) {
-        ErrorReasonDTO errorReasonHttpStatus = generalException.getErrorReasonHttpStatus();
-        return handleExceptionInternal(generalException, errorReasonHttpStatus, null, request);
-    }
+//    @ExceptionHandler(value = GeneralException.class)
+//    public ResponseEntity onThrowException(GeneralException generalException, HttpServletRequest request) {
+//        ErrorReasonDTO errorReasonHttpStatus = generalException.getErrorReasonHttpStatus();
+//        return handleExceptionInternal(generalException, errorReasonHttpStatus, null, request);
+//    }
 
     private ResponseEntity<Object> handleExceptionInternal(Exception e, ErrorReasonDTO reason,
                                                            HttpHeaders headers, HttpServletRequest request) {
